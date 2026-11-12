@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<fieldset style="border: 2px solid rgb(174, 149, 7); border-collapse:collapse; padding: 10px;">
+    <legend>Thông tin dzai</legend> 
+    <form action="/action_page.php" method="post">
+        <label for="name">Tên học sinh:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="class">Lớp:</label>
+        <input type="text" id="class" name="class" required><br>
+
+        <label for="subject">Môn học:</label>
+        <select id="subject" name="subject" required>
+            <option value="">--Chọn môn học--</option>
+            <option value="Tin học văn phòng">Tin học văn phòng</option>
+            <option value="Kỹ thuật lập trình(VB.NET)">Kỹ thuật lập trình(VB.NET)</option>
+        </select><br><br>
+        <textarea name="answer" rows="10" cols="50" placeholder="Nhập câu trả lời của bạn ở đây..." required></textarea><br><br>
+        <input list="subjects" name="idk" placeholder="Chọn hoặc nhập môn học..." required>
+        <datalist id="subjects">
+            <option value="Toi">
+            <option value="ko">
+            <da value="biet">
+            <option value="gi">
+            </option>
+            </datalist><br><br>
+            <input type="submit" value="Nộp bài">
+</fieldset>
+</body>
+</html>
